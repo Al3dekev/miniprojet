@@ -1,15 +1,37 @@
-	var electron = require('electron');
-	var app = electron.app;
-	var BrowserWindow = electron.BrowserWindow;
+/*
+* Lauchment Class of the P2P chat application. 
+* The World have to start in a first way.
+*
+*
+*/
+
+function ApplicationLoader(){
 	
-app.on('ready', function(){
-	var win = new BrowserWindow({
-		width:1200,
-		height:600
-		
-		
-	})
+	/* No Attributs */
 	
-	win.loadURL('file://' + __dirname + '/pagededemarrage.php');
-	win.show();
-})
+	
+	// Constructeur
+	this._construct = function () {
+        var electronLoaded = new ElectronInit(600,400);
+		
+	};
+	
+	this.creatUser = function(){
+
+        var input = document.querySelector(".form-control");
+        var bouton = document.querySelector(".bouton");
+        bouton.onclick = function() {
+            name = input.value;
+            console.log(name);
+        }
+
+	}
+	
+	this.welcome = function(){
+
+	}
+	
+}
+
+
+
