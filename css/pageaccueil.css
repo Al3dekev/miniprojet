@@ -1,0 +1,111 @@
+/*----- Head ----- */
+body {
+  background-color: #C0C0C0;
+}
+
+#pageaccueil .ligne1 .col-md-4:last-child {
+  text-align: right;
+}
+
+#pageaccueil .pseudo {
+  font-size: 1.5em;
+}
+
+#pageaccueil .size-card {
+  width: 150px;
+}
+
+#pageaccueil .maintitre{
+  text-align: center;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius : 0px 0px 10px 10px;
+}
+
+#pageaccueil .maintitre .titre{
+  margin-bottom: 0;
+}
+
+#pageaccueil .size-bouton {
+  margin-top: 2%;
+  margin-right: 2%;
+  font-size: 1.2em;
+}
+
+.size-bouton:hover{
+  color: white;
+}
+/*----- Head ----- */
+/*----- Body ----- */
+#pageaccueil .listegroupe {
+  margin-top: 5%;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+#pageaccueil .listeDuGroupe {
+ min-height: 420px;
+ max-height: 420px;
+}
+
+.back {
+  background-color: #92127D;
+  color: white;
+}
+
+#pageaccueil .popup-welcome {
+  margin-top: 20%;
+  padding: 10px 10px 10px 10px;
+  position: absolute;
+}
+
+#pageaccueil .listeconnecte {
+  margin-top: 5%;
+}
+
+#pageaccueil .titre-personne {
+  font-size: 1.4em;
+  text-align: center;
+  background-color: #92127D;
+  color: white;
+}
+
+#pageaccueil .size-personne {
+    font-size: 1.4em;
+    color: black;
+    text-decoration: none;
+}
+
+#pageaccueil .size-personne:hover {
+  color:green;
+}
+
+#pageaccueil .liste-de-personne {
+ min-height: 420px;
+ max-height: 420px;
+ margin-left: 1%;
+ overflow: scroll;
+}
+
+.new-personne-ok {
+  color :green;
+}
+
+#pageaccueil .row .col-md-4 .create-groupe {
+  position: absolute;
+  bottom: 0px;
+}
+
+#pageaccueil .row .col-md-4 .create-groupe{
+
+}
+
+#pageaccueil .row .col-md-4 .create-groupe .glyGroupe, #pageaccueil .row .col-md-4 .create-groupe .txt-btn-create-groupe{
+  /*vertical-align: sub;*/
+}
+
+#pageaccueil {
+  font-family: 'Sorts Mill Goudy', serif;
+}
+/*----- Body ----- */

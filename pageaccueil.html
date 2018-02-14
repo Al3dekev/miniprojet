@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- INTEGRATION BOOTSTRAP -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- INTEGRATION CSS -->
+    <link rel="stylesheet" type="text/css" href="css/pagededemarrage.css?t123">
+    <link rel="stylesheet" type="text/css" href="css/pagedediscussion.css">
+    <link rel="stylesheet" type="text/css" href="css/pageaccueil.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Libre+Franklin|Sorts+Mill+Goudy|Yanone+Kaffeesatz" rel="stylesheet">
+
+  </head>
+  <body>
+
+  <div id="pageaccueil">
+
+  <div class="row ligne1">
+    <div class="col-md-4">
+      <div class="size-card card card-body">
+        <span class="pseudo">Votre pseudo</span>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card-body maintitre">
+        <h1 class="titre">Talkin' and Peerin'</h1>
+        <span>COMMUNICATION</span>
+
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="bouton">
+        <a href="pagededemarrage.php" class="size-bouton btn btn-outline-secondary">Se déconnecter</a>
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col-md-4 ">
+    <div class="card listegroupe">
+      <div class="back card-header">
+        Liste des groupes
+      </div>
+        <div class="listeDuGroupe list-group list-group-flush">
+
+        </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 ">
+    <div class="card popup-welcome">
+      <span class="glyphicon glyphicon-remove" style="text-align:right; margin-left:93%"></span>
+      <div class="txt">
+        Message de bienvenue :
+         Cras tempor enim eu pellentesque lobortis.
+         Nulla non porttitor lorem. Vestibulum odio dolor, varius iaculis convallis ac,
+          viverra egestas mauris. Etiam id urna arcu.
+         Praesent sed nulla eu sapien rhoncus finibus. Mauris.
+       </div>
+    </div>
+
+    <button type="button" class="btn btn-secondary btn-lg create-groupe">
+      <span class="glyGroupe glyphicon glyphicon-arrow-left"></span>
+      <span class="txt-btn-create-groupe">Création d'un groupe</span>
+    </button>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card  listeconnecte">
+      <div class="titre-personne card-header">
+        Liste des personnes en ligne
+      </div>
+        <div class="list-group list-group-flush">
+            <div class="liste-de-personne">
+              <div class="personne">
+                <span class="new-personne-ok glyphicon glyphicon-ok-circle"></span>
+                <a class="size-personne" href="pagedediscussion.php">Loïc</a>
+              </div>
+              <div class="personne">
+                <span class="new-personne-ok glyphicon glyphicon-ok-circle"></span>
+                <a class="size-personne" href="pagedediscussion.php">Quentin</a>
+              </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script>
+  var bouton = document.querySelector(".glyphicon-remove");
+  var popup = document.querySelector(".popup-welcome");
+  bouton.onclick = function() {
+  popup.style = "display : none";
+  }
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

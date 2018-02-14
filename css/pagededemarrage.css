@@ -1,0 +1,44 @@
+#pdd-main-background{
+  background-color: #92127D;
+}
+
+#PDD-Title{
+  color:#F9F9FA;
+  text-align: center;
+  background-color: #F09202;
+  padding-bottom: 4%;
+  padding-top: 5%;
+  margin: 0;
+}
+#PDD-Title .mainTitle2 {
+  font-size:1em;
+}
+
+.PDD-form{
+  margin: 0;
+  padding: 10px 0px 10px 0px;
+  /*background-color: #92127D;*/
+  text-align: center;
+}
+
+.sub-title{
+  text-align: center;
+  font-family: 'Indie Flower';
+  color:#F9F9FA;
+}
+
+/* FORMULAIRE CREATION PSEUDO */
+.creatUserForm{
+  width: 45%;
+  margin: auto;
+  padding-top: 3%;
+}
+
+.creatUserForm .enterName {
+  display: inline-block;
+}
+
+.creatUserForm .btn-valider {
+  display: inline-block;
+}
+/* FORMULAIRE CREATION PSEUDO */
