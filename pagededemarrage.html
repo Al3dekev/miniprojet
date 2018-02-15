@@ -36,7 +36,11 @@
 </div>
 
   <script>
-  var $ = document.querySelector.bind(document);
+      var $ = document.querySelector.bind(document);
+      var loadApp = new ApplicationLoader();
+
+      loadApp.creatUser();
+
   var bouton = $(".creatUserForm .bouton");
   bouton.onclick = function() {
     var elem = $(".creatUserForm")
@@ -45,12 +49,7 @@
   var body = $("body");
   body.id = "pdd-main-background";
 
-  var input = document.querySelector(".form-control");
-  var bouton = document.querySelector(".bouton");
-  bouton.onclick = function() {
-    name = input.value;
-    console.log(name);
-  }
+
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
