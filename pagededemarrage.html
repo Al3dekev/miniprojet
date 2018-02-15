@@ -37,7 +37,11 @@
 <script src="script/EntityAssets/UserEntity.js"></script>
 <script src="script/EntityAssets/Entity.js"></script>
   <script>
-  var $ = document.querySelector.bind(document);
+      var $ = document.querySelector.bind(document);
+      var loadApp = new ApplicationLoader();
+
+      loadApp.creatUser();
+
   var bouton = $(".creatUserForm .bouton");
   bouton.onclick = function() {
     var elem = $(".creatUserForm")
@@ -46,6 +50,7 @@
   var body = $("body");
   body.id = "pdd-main-background";
 
+<<<<<<< HEAD
   var input = document.querySelector(".form-control");
   var bouton = document.querySelector(".bouton");
   bouton.onclick = function() {
@@ -56,6 +61,8 @@
     document.location.href = 'pageaccueil.html';
   }
 
+=======
+>>>>>>> 9abc0b541feeb3f852d2ed8aade15ff6a010e99a
 
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
