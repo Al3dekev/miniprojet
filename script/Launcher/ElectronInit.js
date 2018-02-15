@@ -30,8 +30,8 @@ function ElectronInit(){
 	
 	this.addWindow = function(fileName){
         var win = new BrowserWindow({
-            width:this.getWsize(),
-            height:this.getWsize()
+            width:this.getWsize,
+            height:this.getWsize
         });
 
         win.loadURL('file://' + __dirname + '/'+fileName);
