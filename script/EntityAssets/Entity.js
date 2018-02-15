@@ -4,6 +4,9 @@ function Entity(){
   this.type;
 
 
+  
+  // LISTAGE GET/SET
+ 
   this.getName = function(){
     return this.name;
   }
@@ -26,8 +29,8 @@ function Entity(){
 
   this.setType = function(type){
     this.type = type;
-  }
-
+  }  
+  
   this.isOnline = function(){
     return true;
   }
