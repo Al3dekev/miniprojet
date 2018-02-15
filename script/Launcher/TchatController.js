@@ -4,9 +4,8 @@ var bouton = document.querySelector(".btn-envoyer");
 
   bouton.onclick = function() {
     var message = input.value;
-    // document.querySelector("p").innerHTML = localStorage.getItem("pseudo");
     var li = document.createElement("li");
     li.style.color = "white";
-    li.innerHTML = message;
+    li.innerHTML = localStorage.getItem("pseudo") +": "+ message;
     screenWindow.appendChild(li);
   }
