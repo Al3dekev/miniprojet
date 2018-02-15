@@ -34,7 +34,8 @@
           </div>
       </div>
 </div>
-
+<script src="script/EntityAssets/UserEntity.js"></script>
+<script src="script/EntityAssets/Entity.js"></script>
   <script>
   var $ = document.querySelector.bind(document);
   var bouton = $(".creatUserForm .bouton");
@@ -49,8 +50,13 @@
   var bouton = document.querySelector(".bouton");
   bouton.onclick = function() {
     name = input.value;
-    console.log(name);
+    var user = new Entity();
+    user.setName(name);
+    console.log(user.getName(),"user");
+    document.location.href = 'pageaccueil.html';
   }
+
+
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
