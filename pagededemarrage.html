@@ -1,55 +1,57 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
 
-    <!-- INTEGRATION BOOTSTRAP -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <!-- INTEGRATION CSS -->
-    <link rel="stylesheet" type="text/css" href="css/pagededemarrage.css?t123">
-    <link rel="stylesheet" type="text/css" href="css/pagedediscussion.css">
-    <link rel="stylesheet" type="text/css" href="css/pageaccueil.css">
+        <!-- INTEGRATION BOOTSTRAP -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <!-- INTEGRATION CSS -->
+        <link rel="stylesheet" type="text/css" href="css/pagededemarrage.css?t123">
+        <link rel="stylesheet" type="text/css" href="css/pagedediscussion.css?123">
+        <link rel="stylesheet" type="text/css" href="css/pageaccueil.css?123">
 
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Libre+Franklin|Sorts+Mill+Goudy|Yanone+Kaffeesatz" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Libre+Franklin|Sorts+Mill+Goudy|Yanone+Kaffeesatz" rel="stylesheet">
+    </head>
+    <body>
 
-  </head>
-  <body>
+        <script src="script/Launcher.js"></script>
+        <script src="script/EntityAssets.js"></script>
+        <script src="script/GraphicAssets.js"></script>
 
-  <div ID="PDD-Title">
-      <h1 class="display-2 mainTitle">Talkin' and Peerin'</h1>
-      <span class="mainTitle2">COMMUNICATION</span>
-  </div>
+        <!-- Appel du MAIN LOADER -->
+        <script src="index.js"></script>
+        <script>
+            var $ = document.querySelector.bind(document);
+            var PageDemarrage = new PageDemarrage();
+            PageDemarrage.startPage();
 
-  <div class="PDD-form">
-      <h2 class="sub-title">Bienvenue</h2>
+            var HTMLbtnvalider = $(".btn-valider .bouton");
+            var HTMLtxtarea = $(".form-control");
+            HTMLbtnvalider.onclick = function() {
+                var name = HTMLtxtarea.value;
+                if (name.length <= 3) {
+                    alert("Veuillez entrer un nom d'au moins 4 caracteres!");
+                } else {
 
-      <div class="creatUserForm">
-          <div class="enterName">
-            <input type="text" class="form-control" placeholder="Entrer votre nom">
-          </div>
-          <div class="btn-valider">
-            <button class="btn btn-info bouton" type="button">Valider</button>
-          </div>
-      </div>
-</div>
-<script src="script/EntityAssets/UserEntity.js"></script>
-<script src="script/EntityAssets/Entity.js"></script>
-<script src="script/Launcher/ApplicationLoader.js"></script>
-  <script>
-      var $ = document.querySelector.bind(document);
-      var loadApp = new ApplicationLoader();
-
-      loadApp.creatUser();
-
-      var body = $("body");
-      body.id = "pdd-main-background";
+                    loadApp.createUser(name);
+                    PageDemarrage.removePage();
+                    var pageAccueilLoaded = new PageAccueil();
+                    //localStorage.setItem("localUser", localUser);
+                    //console.log(user.getName(),"user");
+                    //electronLoaded.changeWindow(redirectedPage);
+                    //window.location.href = 'pageaccueil.html';
+                }
+            };
 
 
-  </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
 
-  </body>
+        </script>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    </body>
 </html>
