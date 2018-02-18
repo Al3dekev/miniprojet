@@ -29,7 +29,6 @@ function ApplicationLoader(){
 					var user = new Entity();
 					user.setName(name);
 					localStorage.setItem("pseudo", name);
-					console.log(user.getName(),"user");
 					document.location.href = 'pageaccueil.html';
 				}
 
