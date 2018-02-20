@@ -34,17 +34,30 @@
           </div>
       </div>
 </div>
-<script src="script/EntityAssets/UserEntity.js"></script>
-<script src="script/EntityAssets/Entity.js"></script>
-<script src="script/Launcher/ApplicationLoader.js"></script>
+  <script src="script/Launcher.js"></script>
+  <script src="script/EntityAssets.js"></script>
+  <script src="script/GraphicAssets.js"></script>
+
   <script>
       var $ = document.querySelector.bind(document);
-      var loadApp = new ApplicationLoader();
+      var PageDemarrage = new PageDemarrage();
+      PageDemarrage.startEventPage();
 
-      loadApp.creatUser();
+      var HTMLbtnvalider = $(".btn-valider .bouton");
+      var HTMLtxtarea = $(".form-control");
+      HTMLbtnvalider.onclick = function() {
+          var name = HTMLtxtarea.value;
+          if (name.length <= 3) {
+              alert("Veuillez entrer un nom d'au moins 4 caracteres!");
+          } else {
+                loadApp.createUser(name);
+                document.location.href = "pageaccueil.html";
+          }
+          };
 
-      var body = $("body");
-      body.id = "pdd-main-background";
+
+
+
 
 
   </script>
