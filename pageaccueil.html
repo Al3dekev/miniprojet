@@ -92,23 +92,15 @@
     </div>
   </div>
 </div>
+  <script src="script/Launcher.js"></script>
+  <script src="script/EntityAssets.js"></script>
+  <script src="script/GraphicAssets.js"></script>
 
-<script src="script/EntityAssets/UserEntity.js"></script>
-<script src="script/EntityAssets/Entity.js"></script>
-<script src="script/Launcher/ApplicationLoader.js"></script>
   <script>
   //Récupération du nom et affichage
-  var afficheName = document.querySelector(".size-card");
-  var p = document.createElement("p");
-  afficheName.appendChild(p);
-  document.querySelector("p").innerHTML = localStorage.getItem("pseudo");
+  var PA = new PageAccueil();
+  PA.startEventPage();
 
-  //Popup disparition
-  var bouton = document.querySelector(".glyphicon-remove");
-  var popup = document.querySelector(".popup-welcome");
-  bouton.onclick = function() {
-  popup.style = "display : none";
-  }
 
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
